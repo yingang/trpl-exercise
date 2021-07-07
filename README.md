@@ -1,2 +1,2 @@
 # trpl-exercise
-Exercises in The Rust Programming Language
+Hope what I've written here will get more and more Rusty eventually!
