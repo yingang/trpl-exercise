@@ -1,13 +1,9 @@
 use std::collections::HashMap;
-use std::collections::hash_map::Entry;
 
 fn ex01() {
     let mut input = vec![3, 7, 5, 4, 3, 1, 2, 9, 0];
 
-    let mut total = 0;
-    for i in &input {
-        total += i;
-    }
+    let total: i32 = input.iter().sum();
     let average = total as f32 / input.len() as f32;
     println!("the average is {}", average);
 
@@ -88,7 +84,7 @@ impl Company {
     pub fn print_all_employees(&self) {
         let mut names = Vec::new();
 
-        for (k, v) in &self.departments {
+        for (_, v) in &self.departments {
             for name in v {
                 names.push(name);
             }
